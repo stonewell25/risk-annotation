@@ -80,6 +80,8 @@ p { margin: 0; }
 .scale button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-fg); }
 .scale-ends { display: flex; justify-content: space-between; gap: 12px; font-size: .78rem; color: var(--muted); }
 .scale-ends span:last-child { text-align: right; }
+.reward { border: 2px solid var(--accent); border-radius: 8px; padding: 14px 16px; background: var(--ok-soft); display: flex; flex-direction: column; gap: 8px; }
+.reward .id { font-family: var(--font-mono); font-weight: 500; word-break: break-all; }
 .markbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 label { font-size: .9rem; font-weight: 500; }
 textarea { width: 100%; box-sizing: border-box; min-height: 64px; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); resize: vertical; }
@@ -117,30 +119,32 @@ td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; whit
 <body>
 <div class="wrap">
   <div class="topbar">
-    <h1>家の中の危ない場面さがし</h1>
+    <h1 data-i18n="title">家の中の危ない場面さがし</h1>
+    <button class="tab" id="lang" data-i18n="lang.switch">English</button>
   </div>
 
   <section class="panel" id="view-loading">
-    <p class="muted">読み込み中です…</p>
+    <p class="muted" data-i18n="loading">読み込み中です…</p>
   </section>
 
   <section class="panel" id="view-blocked" hidden>
-    <h2>準備中です</h2>
-    <p id="blocked-msg">このページはまだ回答を受け付けていません。</p>
+    <h2 data-i18n="blocked.h"></h2>
+    <p data-i18n="blocked.p"></p>
   </section>
 
   <section class="panel" id="view-intro" hidden>
-    <h2>お願い</h2>
-    <p>家の中の場面の画像が <span id="n-items"></span> 枚あります。それぞれの画像について、住んでいる人のけがや事故につながりそうな「危ないところ」があるかを答えてください。</p>
+    <h2 data-i18n="intro.h"></h2>
+    <p data-i18n-html="intro.p"></p>
     <ol class="steps">
-      <li>あてはまる危険の種類を選びます(いくつ選んでもかまいません)。</li>
-      <li>危ないと思う場所を、画像の上でクリック(タップ)して印を付けます。もう一度押すと消えます。</li>
-      <li>どんな危険がありそうかを、一言で書きます(例: 階段に物が置いてあって、つまずいて落ちそう)。</li>
-      <li>あなただったらすぐに対応するかを、1〜5 で選びます(1: 放っておいてもよい 〜 5: すぐに片付ける・自分で整える)。</li>
-      <li>特に危ないところがなければ「危ないところはない」を選びます。危ないところがない画像も混ざっています。</li>
+      <li data-i18n="intro.s1"></li>
+      <li data-i18n="intro.s2"></li>
+      <li data-i18n="intro.s3"></li>
+      <li data-i18n="intro.s4"></li>
+      <li data-i18n="intro.s5"></li>
+      <li data-i18n="intro.s6"></li>
     </ol>
-    <p class="muted">正解はありません。見たままの印象で答えてください。回答は 1 枚ごとに自動で送信されます。途中で閉じても、同じブラウザで開き直せば続きから再開できます。個人を特定する情報は集めません。所要時間はおよそ 15 分です。</p>
-    <div class="nav"><span></span><button class="btn primary" id="start">はじめる</button></div>
+    <p class="muted" data-i18n="intro.note"></p>
+    <div class="nav"><span></span><button class="btn primary" id="start" data-i18n="start"></button></div>
   </section>
 
   <section class="panel" id="view-item" hidden>
@@ -149,40 +153,48 @@ td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; whit
       <span class="progress" id="answered"></span>
     </div>
     <div class="bar"><span id="bar" style="width:0%"></span></div>
-    <div class="stage" id="stage"><img class="shot" id="shot" alt="家の中の場面の画像" draggable="false"></div>
-    <p class="question">この画像に、けがや事故につながりそうな危ないところはありますか？</p>
+    <div class="stage" id="stage"><img class="shot" id="shot" data-i18n-alt="shot.alt" alt="" draggable="false"></div>
+    <p class="question" data-i18n="question"></p>
     <div class="cats" id="cats"></div>
     <div id="desc-box" hidden>
-      <label for="desc">どんな危険がありそうか、一言で書いてください(必須)</label>
-      <textarea id="desc" placeholder="例: 階段に物が置いてあって、つまずいて落ちそう"></textarea>
+      <label for="desc" data-i18n="desc.label"></label>
+      <textarea id="desc" data-i18n-ph="desc.ph"></textarea>
+    </div>
+    <div id="action-box" hidden>
+      <label for="action" data-i18n="action.label"></label>
+      <textarea id="action" data-i18n-ph="action.ph"></textarea>
     </div>
     <div class="urgency" id="urgency-box" hidden>
-      <span class="question" id="urgency-q">あなただったら、すぐに対応しますか？ 緊急度を 1〜5 で選んでください。</span>
+      <span class="question" id="urgency-q" data-i18n="urgency.q"></span>
       <div class="scale" id="scale" role="group" aria-labelledby="urgency-q"></div>
-      <div class="scale-ends"><span>1: 放っておいてもよい</span><span>5: すぐに片付ける・自分で整える</span></div>
+      <div class="scale-ends"><span data-i18n="urgency.lo"></span><span data-i18n="urgency.hi"></span></div>
     </div>
     <div class="markbar" id="markbar" hidden>
-      <span class="hint" id="mark-hint">危ないと思う場所を、画像の上でクリックして印を付けてください(1 か所以上)。</span>
-      <button class="btn small" id="clear-marks">印を全部消す</button>
+      <span class="hint" id="mark-hint" data-i18n="mark.hint"></span>
+      <button class="btn small" id="clear-marks" data-i18n="mark.clear"></button>
     </div>
     <div class="status" id="status" aria-live="polite"></div>
     <div class="nav">
-      <button class="btn" id="prev">前へ</button>
-      <button class="btn primary" id="next">次へ</button>
+      <button class="btn" id="prev" data-i18n="prev"></button>
+      <button class="btn primary" id="next"></button>
     </div>
   </section>
 
   <section class="panel" id="view-done" hidden>
-    <h2>ご協力ありがとうございました</h2>
-    <p>すべての回答が送信されました。回答を直したいときは、下のボタンから戻れます(直した回答も送信されます)。</p>
-    <p class="muted">回答 ID: <span class="progress" id="my-id"></span></p>
+    <h2 data-i18n="done.h"></h2>
+    <p data-i18n="done.p"></p>
+    <div class="reward">
+      <p data-i18n-html="done.reward"></p>
+      <p><span data-i18n="done.id"></span> <span class="id" id="my-id"></span></p>
+    </div>
     <div class="status" id="done-status" aria-live="polite"></div>
-    <div class="nav"><span></span><button class="btn" id="review">回答を見直す</button></div>
+    <div class="nav"><span></span><button class="btn" id="review" data-i18n="review"></button></div>
   </section>
 
 </div>
 
 <script src="config.js"></script>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

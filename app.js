@@ -3,21 +3,38 @@
 // 送れなかった回答はブラウザに溜めておき、次の送信時・次に開いたときに送り直す。
 "use strict";
 
-const PAGE_VERSION = "2026-10-28";
+const PAGE_VERSION = "2026-10-28c";
 const N_ITEMS = 24;
 const IDS = Array.from({ length: N_ITEMS }, (_, i) => "img" + String(i + 1).padStart(2, "0"));
-const CATS = [
-  ["fire", "火事・やけど", "火や熱いもの"],
-  ["cut", "切り傷・刺し傷", "刃物や割れ物"],
-  ["fall", "転倒", "つまずく・滑る"],
-  ["drop", "物の落下", "落ちてきて当たる・割れる"],
-  ["elec", "感電・水濡れ", "電気製品と水"],
-  ["hygiene", "不衛生", "ゴミ・汚れ"],
-  ["other", "その他", "下の説明に書いてください"],
-  ["none", "危ないところはない", ""],
-];
+const CATS = ["fire", "cut", "fall", "drop", "elec", "hygiene", "other", "none"];
 const MAX_MARKS = 6;
 const STORE_KEY = "risk-annotation-v1";
+const LANG_KEY = "risk-annotation-lang";
+
+// ---- 言語(日本語・英語)。文言は i18n.js ----
+let lang = (() => {
+  try { const l = localStorage.getItem(LANG_KEY); if (l && I18N[l]) return l; } catch (e) { /* 既定に戻す */ }
+  return (navigator.language || "").toLowerCase().startsWith("ja") ? "ja" : "en";
+})();
+function t(key, vars = {}) {
+  let s = I18N[lang][key] ?? I18N.ja[key] ?? key;
+  for (const [k, v] of Object.entries(vars)) s = s.replace(`{${k}}`, v);
+  return s;
+}
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.title = t("title");
+  for (const el of document.querySelectorAll("[data-i18n]")) el.textContent = t(el.dataset.i18n);
+  for (const el of document.querySelectorAll("[data-i18n-html]")) el.innerHTML = t(el.dataset.i18nHtml); // 辞書の中身だけ
+  for (const el of document.querySelectorAll("[data-i18n-ph]")) el.placeholder = t(el.dataset.i18nPh);
+  for (const el of document.querySelectorAll("[data-i18n-alt]")) el.alt = t(el.dataset.i18nAlt);
+  $("n-items").textContent = String(IDS.length);
+  for (const b of $("cats").children) {
+    b.firstChild.textContent = t("cat." + b.dataset.k);
+    b.querySelector("small").textContent = t("cat." + b.dataset.k + ".sub");
+    b.querySelector("small").hidden = !t("cat." + b.dataset.k + ".sub");
+  }
+}
 
 const $ = (id) => document.getElementById(id);
 const VIEWS = ["view-loading", "view-blocked", "view-intro", "view-item", "view-done"];
@@ -25,7 +42,7 @@ function show(v) { for (const id of VIEWS) $(id).hidden = id !== v; }
 
 let state = null; // {id, order, answers, startedAt, pending}
 let pos = 0;
-let draft = null; // 今の画像で選びかけの回答 {cats, desc, urgency, points}
+let draft = null; // 今の画像で選びかけの回答 {cats, desc, action, urgency, points}
 let sending = false;
 
 function shuffle(a) {
@@ -74,10 +91,10 @@ async function flush() {
     if (!out.ok) throw new Error(out.error || "rejected");
     state.pending = state.pending.slice(batch.length);
     persist();
-    setStatus("送信しました");
+    setStatus(t("sent"));
     ok = true;
   } catch (e) {
-    setStatus("送信できませんでした。通信が戻ったら次の回答と一緒に送り直します。", true);
+    setStatus(t("send.fail"), true);
   } finally {
     sending = false;
   }
@@ -100,11 +117,10 @@ function complete(d) {
   return d.desc.trim().length > 0 && d.urgency != null && d.points.length > 0;
 }
 
-for (const [k, label, sub] of CATS) {
+for (const k of CATS) {
   const b = document.createElement("button");
   b.className = "cat"; b.dataset.k = k; b.setAttribute("aria-pressed", "false");
-  b.textContent = label;
-  if (sub) { const s = document.createElement("small"); s.textContent = sub; b.append(s); }
+  b.append(document.createTextNode(""), document.createElement("small")); // 文言は applyLang() で入れる
   b.onclick = () => toggleCat(k);
   $("cats").append(b);
 }
@@ -119,22 +135,24 @@ function renderItem() {
   const id = state.order[pos];
   const saved = state.answers[id];
   if (!draft) draft = saved
-    ? { cats: saved.cats.slice(), desc: saved.desc || "", urgency: saved.urgency ?? null, points: (saved.points || []).map((p) => p.slice()) }
-    : { cats: [], desc: "", urgency: null, points: [] };
+    ? { cats: saved.cats.slice(), desc: saved.desc || "", action: saved.action || "", urgency: saved.urgency ?? null, points: (saved.points || []).map((p) => p.slice()) }
+    : { cats: [], desc: "", action: "", urgency: null, points: [] };
   $("progress").textContent = `${pos + 1} / ${state.order.length}`;
-  $("answered").textContent = `回答済み ${answeredCount()}`;
+  $("answered").textContent = t("answered", { n: answeredCount() });
   $("bar").style.width = `${(answeredCount() / state.order.length) * 100}%`;
   if ($("shot").dataset.id !== id) { $("shot").src = `img/${id}.jpg`; $("shot").dataset.id = id; }
   for (const b of $("cats").children) b.setAttribute("aria-pressed", String(draft.cats.includes(b.dataset.k)));
   $("desc-box").hidden = !isRisk(draft);
   $("desc").value = draft.desc;
+  $("action-box").hidden = !isRisk(draft);
+  $("action").value = draft.action;
   $("urgency-box").hidden = !isRisk(draft);
   for (const b of $("scale").children) b.setAttribute("aria-pressed", String(Number(b.dataset.v) === draft.urgency));
   $("markbar").hidden = !isRisk(draft);
   $("stage").classList.toggle("marking", isRisk(draft));
   renderDots();
   $("prev").disabled = pos === 0;
-  $("next").textContent = pos === state.order.length - 1 ? "回答を終える" : "次へ";
+  $("next").textContent = pos === state.order.length - 1 ? t("finish") : t("next");
   updateNext();
   show("view-item");
 }
@@ -154,10 +172,10 @@ function updateNext() {
   const st = $("status");
   if (st.classList.contains("err")) return;
   if (draft.cats.length === 0) st.textContent = "";
-  else if (isRisk(draft) && !draft.desc.trim() && draft.points.length === 0) st.textContent = "危険の説明を書き、画像の上で危ない場所に印を付けると次へ進めます";
-  else if (isRisk(draft) && !draft.desc.trim()) st.textContent = "どんな危険かを書くと次へ進めます";
-  else if (isRisk(draft) && draft.urgency == null) st.textContent = "緊急度を 1〜5 で選ぶと次へ進めます";
-  else if (isRisk(draft) && draft.points.length === 0) st.textContent = "画像の上で危ない場所に印を付けると次へ進めます";
+  else if (isRisk(draft) && !draft.desc.trim() && draft.points.length === 0) st.textContent = t("need.desc_mark");
+  else if (isRisk(draft) && !draft.desc.trim()) st.textContent = t("need.desc");
+  else if (isRisk(draft) && draft.urgency == null) st.textContent = t("need.urgency");
+  else if (isRisk(draft) && draft.points.length === 0) st.textContent = t("need.mark");
   else st.textContent = "";
 }
 
@@ -165,7 +183,7 @@ function toggleCat(k) {
   if (k === "none") {
     // 「ない」は他の選択と両立しないので、選んだら他と印を消す
     draft.cats = draft.cats.includes("none") ? [] : ["none"];
-    draft.points = []; draft.desc = ""; draft.urgency = null;
+    draft.points = []; draft.desc = ""; draft.action = ""; draft.urgency = null;
   } else {
     draft.cats = draft.cats.filter((c) => c !== "none");
     draft.cats = draft.cats.includes(k) ? draft.cats.filter((c) => c !== k) : [...draft.cats, k];
@@ -183,17 +201,17 @@ $("stage").addEventListener("click", (e) => {
   const near = draft.points.findIndex(([px, py]) => Math.hypot((px - x) * r.width, (py - y) * r.height) < r.width * 0.04);
   if (near >= 0) draft.points.splice(near, 1);
   else if (draft.points.length < MAX_MARKS) draft.points.push([+x.toFixed(4), +y.toFixed(4)]);
-  else { $("status").textContent = `印は ${MAX_MARKS} か所までです`; return; }
+  else { $("status").textContent = t("mark.max", { n: MAX_MARKS }); return; }
   renderDots(); updateNext();
 });
 
 function commitAndGo(delta) {
   const id = state.order[pos];
   if (complete(draft)) {
-    const next = { cats: draft.cats.slice(), desc: draft.desc.trim(), urgency: draft.urgency, points: draft.points.map((p) => p.slice()) };
+    const next = { cats: draft.cats.slice(), desc: draft.desc.trim(), action: draft.action.trim(), urgency: draft.urgency, points: draft.points.map((p) => p.slice()) };
     const prev = state.answers[id];
-    const same = prev && JSON.stringify([prev.cats, prev.desc, prev.urgency, prev.points]) ===
-      JSON.stringify([next.cats, next.desc, next.urgency, next.points]);
+    const same = prev && JSON.stringify([prev.cats, prev.desc, prev.action || "", prev.urgency, prev.points]) ===
+      JSON.stringify([next.cats, next.desc, next.action, next.urgency, next.points]);
     if (!same) {
       const at = new Date().toISOString();
       state.answers[id] = { ...next, at };
@@ -202,7 +220,7 @@ function commitAndGo(delta) {
         annotator_id: state.id, image: id, cats: next.cats.join("|"), desc: next.desc,
         urgency: next.urgency ?? "", points: JSON.stringify(next.points), answered_at: at,
         started_at: state.startedAt, position: state.order.indexOf(id) + 1, revision: prev ? 1 : 0,
-        page_version: PAGE_VERSION,
+        page_version: PAGE_VERSION, action: next.action, lang,
       });
       persist();
       flush();
@@ -219,7 +237,7 @@ function commitAndGo(delta) {
 }
 
 function showDone() {
-  $("my-id").textContent = state.id.slice(0, 8);
+  $("my-id").textContent = state.id;
   show("view-done");
   flush();
 }
@@ -231,17 +249,24 @@ function resume() {
   draft = null; renderItem();
 }
 
-$("n-items").textContent = String(IDS.length);
 $("start").onclick = () => {
   state.startedAt = state.startedAt || new Date().toISOString();
   persist(); pos = 0; draft = null; renderItem();
 };
 $("review").onclick = () => { pos = 0; draft = null; renderItem(); };
 $("desc").addEventListener("input", (e) => { draft.desc = e.target.value; updateNext(); });
+$("action").addEventListener("input", (e) => { draft.action = e.target.value; });
 $("clear-marks").onclick = () => { draft.points = []; renderDots(); updateNext(); };
 $("next").onclick = () => commitAndGo(1);
 $("prev").onclick = () => commitAndGo(-1);
 window.addEventListener("online", flush);
+$("lang").onclick = () => {
+  lang = lang === "ja" ? "en" : "ja";
+  try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* 次に開いたときは既定に戻るだけ */ }
+  applyLang();
+  if (!$("view-item").hidden) renderItem();
+};
+applyLang();
 
 state = load();
 persist();
