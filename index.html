@@ -37,7 +37,11 @@
   --accent: #6fbf9b; --accent-fg: #0f1512; --ok: #6fbf9b; --ng: #e58a70; --ng-soft: #3a2620; --ok-soft: #1f3329;
   color-scheme: dark;
 }
+/* .panel などの display 指定が hidden 属性に勝たないように(claude.ai 版では外側の雛形が入れていた) */
+[hidden] { display: none !important; }
+*, *::before, *::after { box-sizing: border-box; }
 body {
+  margin: 0;
   background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.7;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-block: 20px 40px;
