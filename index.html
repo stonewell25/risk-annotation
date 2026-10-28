@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家の中の危ない場面さがし</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* 1 枚ずつ答えるカード型のツール。画像を主役に、危険の種類と場所を真下で答える */
+:root {
+  --bg: #f3f4f1;
+  --surface: #ffffff;
+  --fg: #1d2421;
+  --muted: #5d6762;
+  --line: #d6dbd6;
+  --accent: #2f6b55;
+  --accent-fg: #ffffff;
+  --ok: #2f6b55;
+  --ng: #b0482f;
+  --ng-soft: #f6e4de;
+  --ok-soft: #dfeee7;
+  --mark: #ff3d2e;
+  --font-display: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161a18; --surface: #1f2522; --fg: #e6ebe7; --muted: #9aa6a0; --line: #343c38;
+    --accent: #6fbf9b; --accent-fg: #0f1512; --ok: #6fbf9b; --ng: #e58a70; --ng-soft: #3a2620; --ok-soft: #1f3329;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161a18; --surface: #1f2522; --fg: #e6ebe7; --muted: #9aa6a0; --line: #343c38;
+  --accent: #6fbf9b; --accent-fg: #0f1512; --ok: #6fbf9b; --ng: #e58a70; --ng-soft: #3a2620; --ok-soft: #1f3329;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px;
+}
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+h1 { font-family: var(--font-display); font-size: 1.35rem; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-size: 1.1rem; margin: 0; }
+p { margin: 0; }
+.muted { color: var(--muted); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.topbar { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.tabs { display: flex; gap: 6px; }
+.tab { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 4px 14px; font: inherit; font-size: .85rem; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.progress { font-family: var(--font-mono); font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.bar { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.bar > span { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+.stage { position: relative; width: 100%; aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden; background: var(--line); }
+.stage.marking { cursor: crosshair; }
+.shot { width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; }
+.dot { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; border: 3px solid var(--mark);
+  background: rgba(255, 61, 46, .18); box-shadow: 0 0 0 2px rgba(255,255,255,.9); pointer-events: none; }
+.question { font-weight: 700; }
+.hint { font-size: .85rem; color: var(--muted); }
+.cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+.cat { font: inherit; text-align: left; padding: 10px 12px; border-radius: 8px; border: 2px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; line-height: 1.4; }
+.cat small { display: block; color: var(--muted); font-size: .75rem; }
+.cat:hover { border-color: var(--muted); }
+.cat[aria-pressed="true"] { border-color: var(--accent); background: var(--ok-soft); }
+.cat[data-k="none"][aria-pressed="true"] { border-color: var(--muted); background: var(--line); }
+.urgency { display: flex; flex-direction: column; gap: 8px; }
+.scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.scale button { font: inherit; font-family: var(--font-mono); font-size: 1.1rem; font-weight: 500; padding: 10px 0; border-radius: 8px;
+  border: 2px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; font-variant-numeric: tabular-nums; }
+.scale button:hover { border-color: var(--muted); }
+.scale button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-fg); }
+.scale-ends { display: flex; justify-content: space-between; gap: 12px; font-size: .78rem; color: var(--muted); }
+.scale-ends span:last-child { text-align: right; }
+.markbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+label { font-size: .9rem; font-weight: 500; }
+textarea { width: 100%; box-sizing: border-box; min-height: 64px; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); resize: vertical; }
+.nav { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: center; }
+.btn { font: inherit; font-weight: 500; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+.btn.small { padding: 4px 12px; font-size: .85rem; }
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+button:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.status { font-size: .85rem; color: var(--muted); min-height: 1.4em; }
+.status.err { color: var(--ng); }
+ol.steps { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 4px; }
+/* 集計 */
+.summary { display: flex; gap: 24px; flex-wrap: wrap; }
+.summary div { display: flex; flex-direction: column; }
+.summary b { font-family: var(--font-mono); font-size: 1.4rem; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; min-width: 680px; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 500; color: var(--muted); font-size: .78rem; letter-spacing: .04em; }
+td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.thumb { position: relative; width: 120px; height: 120px; border-radius: 4px; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.thumb i { position: absolute; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: var(--mark); box-shadow: 0 0 0 1px #fff; }
+.counts { margin: 0; padding: 0; list-style: none; font-size: .8rem; }
+.counts li.hit { font-weight: 700; color: var(--ok); }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .75rem; font-weight: 700; white-space: nowrap; }
+.pill.keep { background: var(--ok-soft); color: var(--ok); }
+.pill.drop { background: var(--ng-soft); color: var(--ng); }
+.pill.none { background: var(--line); color: var(--muted); }
+.reasons { margin: 0; padding-left: 1.1em; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .bar > span { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1>家の中の危ない場面さがし</h1>
+  </div>
+
+  <section class="panel" id="view-loading">
+    <p class="muted">読み込み中です…</p>
+  </section>
+
+  <section class="panel" id="view-blocked" hidden>
+    <h2>準備中です</h2>
+    <p id="blocked-msg">このページはまだ回答を受け付けていません。</p>
+  </section>
+
+  <section class="panel" id="view-intro" hidden>
+    <h2>お願い</h2>
+    <p>家の中の場面の画像が <span id="n-items"></span> 枚あります。それぞれの画像について、住んでいる人のけがや事故につながりそうな「危ないところ」があるかを答えてください。</p>
+    <ol class="steps">
+      <li>あてはまる危険の種類を選びます(いくつ選んでもかまいません)。</li>
+      <li>危ないと思う場所を、画像の上でクリック(タップ)して印を付けます。もう一度押すと消えます。</li>
+      <li>どんな危険がありそうかを、一言で書きます(例: 階段に物が置いてあって、つまずいて落ちそう)。</li>
+      <li>あなただったらすぐに対応するかを、1〜5 で選びます(1: 放っておいてもよい 〜 5: すぐに片付ける・自分で整える)。</li>
+      <li>特に危ないところがなければ「危ないところはない」を選びます。危ないところがない画像も混ざっています。</li>
+    </ol>
+    <p class="muted">正解はありません。見たままの印象で答えてください。回答は 1 枚ごとに自動で送信されます。途中で閉じても、同じブラウザで開き直せば続きから再開できます。個人を特定する情報は集めません。所要時間はおよそ 15 分です。</p>
+    <div class="nav"><span></span><button class="btn primary" id="start">はじめる</button></div>
+  </section>
+
+  <section class="panel" id="view-item" hidden>
+    <div class="topbar">
+      <span class="progress" id="progress"></span>
+      <span class="progress" id="answered"></span>
+    </div>
+    <div class="bar"><span id="bar" style="width:0%"></span></div>
+    <div class="stage" id="stage"><img class="shot" id="shot" alt="家の中の場面の画像" draggable="false"></div>
+    <p class="question">この画像に、けがや事故につながりそうな危ないところはありますか？</p>
+    <div class="cats" id="cats"></div>
+    <div id="desc-box" hidden>
+      <label for="desc">どんな危険がありそうか、一言で書いてください(必須)</label>
+      <textarea id="desc" placeholder="例: 階段に物が置いてあって、つまずいて落ちそう"></textarea>
+    </div>
+    <div class="urgency" id="urgency-box" hidden>
+      <span class="question" id="urgency-q">あなただったら、すぐに対応しますか？ 緊急度を 1〜5 で選んでください。</span>
+      <div class="scale" id="scale" role="group" aria-labelledby="urgency-q"></div>
+      <div class="scale-ends"><span>1: 放っておいてもよい</span><span>5: すぐに片付ける・自分で整える</span></div>
+    </div>
+    <div class="markbar" id="markbar" hidden>
+      <span class="hint" id="mark-hint">危ないと思う場所を、画像の上でクリックして印を付けてください(1 か所以上)。</span>
+      <button class="btn small" id="clear-marks">印を全部消す</button>
+    </div>
+    <div class="status" id="status" aria-live="polite"></div>
+    <div class="nav">
+      <button class="btn" id="prev">前へ</button>
+      <button class="btn primary" id="next">次へ</button>
+    </div>
+  </section>
+
+  <section class="panel" id="view-done" hidden>
+    <h2>ご協力ありがとうございました</h2>
+    <p>すべての回答が送信されました。回答を直したいときは、下のボタンから戻れます(直した回答も送信されます)。</p>
+    <p class="muted">回答 ID: <span class="progress" id="my-id"></span></p>
+    <div class="status" id="done-status" aria-live="polite"></div>
+    <div class="nav"><span></span><button class="btn" id="review">回答を見直す</button></div>
+  </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
