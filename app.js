@@ -3,7 +3,7 @@
 // 送れなかった回答はブラウザに溜めておき、次の送信時・次に開いたときに送り直す。
 "use strict";
 
-const PAGE_VERSION = "2026-10-28c";
+const PAGE_VERSION = "2026-10-28d";
 const N_ITEMS = 24;
 const IDS = Array.from({ length: N_ITEMS }, (_, i) => "img" + String(i + 1).padStart(2, "0"));
 const CATS = ["fire", "cut", "fall", "drop", "elec", "hygiene", "other", "none"];
@@ -61,6 +61,12 @@ function newId() {
 
 // ブラウザの保存領域は、プライベートウィンドウなどで使えないことがある。そのときは再開できないだけで回答はできる
 function load() {
+  // URL の末尾に ?reset を付けて開くと、この端末の記録を消して新しい回答者として始める(共用 PC で順番に答えてもらう用)。
+  // 再読み込みでまた消えないよう、URL からは外しておく
+  if (new URLSearchParams(location.search).has("reset")) {
+    try { localStorage.removeItem(STORE_KEY); } catch (e) { /* 使えないときは元から記録がない */ }
+    history.replaceState(null, "", location.pathname);
+  }
   try {
     const s = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
     if (s && s.id && Array.isArray(s.order) && s.order.length === IDS.length && s.order.every((x) => IDS.includes(x))) {
