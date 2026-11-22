@@ -31,6 +31,8 @@ const I18N = {
     "p.note": "このあと見るすべての画像で、<b>この人たちにとって</b>危ないかどうかを考えて答えてください。人の紹介は画像の上にいつも出ていて、「この家の人のくわしい紹介」を押すと、いつでもこの説明を読み直せます。",
     "p.cardsub": "この人たちにとって危ないかを答えます",
     age: "{n} 歳",
+    "p.plain": "ふつう・なし: {items}",
+    "p.nextmember": "次は {who} を見る →",
 
     "how.h": "答え方",
     "how.p": "画像は {n} 枚あります。1 枚ずつ、上から順に答えます。",
@@ -141,6 +143,8 @@ const I18N = {
     "p.note": "For every picture that follows, think about whether it is dangerous <b>for these people</b>. A short profile is always shown above the picture, and you can reread these details at any time with \"About the people in this home\".",
     "p.cardsub": "Answer for these people",
     age: "age {n}",
+    "p.plain": "Normal / none: {items}",
+    "p.nextmember": "Next: {who} →",
 
     "how.h": "How to answer",
     "how.p": "There are {n} pictures. For each one, answer the questions from top to bottom.",

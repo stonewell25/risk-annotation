@@ -214,26 +214,65 @@ function profTable(m) {
   tb.append(body);
   return tb;
 }
+// スマートフォン用(2026-11-22): 表をやめて、大項目ごとに「項目名(小さく)→ 値」を縦に並べる。
+// 「ふつう」「なし」の項目は大項目の最後に 1 行でまとめる
+function profList(m) {
+  const box = el("div", "plist");
+  for (const [grp, rows] of L(m.profile)) {
+    const sec = el("section", "pgrp");
+    sec.append(el("h4", null, grp));
+    const plain = [];
+    for (const [k, v] of rows) {
+      if (NORMAL.has(v)) { plain.push(k); continue; }
+      const kv = el("div", "kv");
+      kv.append(el("span", "k", k), el("span", "v", v));
+      sec.append(kv);
+    }
+    if (plain.length) sec.append(el("p", "plain", t("p.plain", { items: plain.join(lang === "ja" ? "、" : ", ") })));
+    box.append(sec);
+  }
+  return box;
+}
+// 家の人の紹介。PC は全員を縦に並べて表で、スマートフォンは上のタブで 1 人ずつ切り替えて縦並びで見せる
+function memberCards(p) {
+  const tabs = el("div", "mtabs ptabs");
+  const cards = p.members.map((m, i) => {
+    const d = el("div", "member" + (i === 0 ? " on" : ""));
+    d.append(el("b", null, `${m.icon} ${L(m.label)}`), el("span", null, `${t("age", { n: m.age })} · ${L(m.desc)}`));
+    if (m.profile) d.append(profTable(m), profList(m));
+    return d;
+  });
+  const pick = (i) => {
+    tabs.querySelectorAll(".mtab").forEach((x, j) => x.setAttribute("aria-pressed", String(j === i)));
+    cards.forEach((c, j) => c.classList.toggle("on", j === i));
+    tabs.scrollIntoView({ block: "start" });
+  };
+  // スマートフォンでは 1 人目だけ読んで先へ進まないように、カードの最後に「次の人を見る」を置く
+  cards.forEach((c, i) => {
+    if (i + 1 >= p.members.length) return;
+    const n = el("button", "btn pnext", t("p.nextmember", { who: `${p.members[i + 1].icon} ${L(p.members[i + 1].label)}` }));
+    n.type = "button"; n.onclick = () => pick(i + 1);
+    c.append(n);
+  });
+  if (p.members.length > 1) p.members.forEach((m, i) => {
+    const b = el("button", "mtab");
+    b.type = "button"; b.setAttribute("aria-pressed", String(i === 0));
+    b.append(el("span", "micon", m.icon), el("span", null, L(m.label)), el("small", null, t("age", { n: m.age })));
+    b.onclick = () => pick(i);
+    tabs.append(b);
+  });
+  return [tabs, ...cards];
+}
 const persona = () => PERSONAS[state.persona];
 function renderPersona() {
   const p = persona();
   $("p-icon").textContent = p.icon;
   $("p-story").textContent = L(p.story);
-  $("p-members").replaceChildren(...p.members.map((m) => {
-    const d = el("div", "member");
-    d.append(el("b", null, `${m.icon} ${L(m.label)}`), el("span", null, `${t("age", { n: m.age })} · ${L(m.desc)}`));
-    if (m.profile) d.append(profTable(m));
-    return d;
-  }));
+  $("p-members").replaceChildren(...memberCards(p));
   $("c-icon").textContent = p.icon;
   $("c-text").replaceChildren(L(p.card), el("small", null, t("p.cardsub")));
   // 回答中にいつでも開ける、詳しいプロフィール
-  $("prof-body").replaceChildren(el("p", "story-text", L(p.story)), ...p.members.map((m) => {
-    const d = el("div", "member");
-    d.append(el("b", null, `${m.icon} ${L(m.label)}`), el("span", null, `${t("age", { n: m.age })} · ${L(m.desc)}`));
-    if (m.profile) d.append(profTable(m));
-    return d;
-  }));
+  $("prof-body").replaceChildren(el("p", "story-text", L(p.story)), ...memberCards(p));
 }
 $("persona-prev").onclick = () => goStep("attr");
 $("persona-next").onclick = () => goStep("how");

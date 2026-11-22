@@ -111,7 +111,27 @@ table.profile tr:not(.first) th.attr, table.profile tr:not(.first) td { border-t
 table.profile th.grp { white-space: nowrap; font-weight: 700; width: 1%; }
 table.profile th.attr { font-weight: 500; white-space: nowrap; width: 1%; color: var(--muted, #666); }
 table.profile td.normal { color: var(--muted, #888); }
-@media (max-width: 560px) { table.profile th.attr { white-space: normal; } }
+/* スマートフォン用の縦並び(profList)とタブ。PC では表を出す(2026-11-22) */
+.plist, .ptabs, .pnext { display: none; }
+#prof-body > * { flex-shrink: 0; }
+.plist { flex-direction: column; gap: 14px; margin-top: 10px; }
+.pgrp { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 10px; }
+.pgrp h4 { margin: 0; font-size: .9rem; color: var(--accent); }
+.kv { display: flex; flex-direction: column; }
+.kv .k { font-size: .8rem; color: var(--muted); line-height: 1.4; }
+.kv .v { font-size: 1rem; line-height: 1.6; color: var(--fg); }
+.pgrp .plain { font-size: .85rem; color: var(--muted); line-height: 1.5; }
+@media (max-width: 640px) {
+  table.profile { display: none; }
+  .plist { display: flex; }
+  .pnext { display: block; margin-top: 14px; align-self: flex-end; }
+  .ptabs { display: flex; position: sticky; top: 0; z-index: 4; background: var(--surface); padding: 6px 0; margin: 0; flex-wrap: nowrap; overflow-x: auto; }
+  .ptabs .mtab { min-width: 0; flex: 1 0 auto; }
+  .members.profiles .member:not(.on), #prof-body .member:not(.on) { display: none; }
+  .member { padding: 12px 14px; }
+  .help { width: calc(100% - 16px); max-width: none; padding: 16px; max-height: calc(100svh - 24px); }
+  #prof-body { max-height: calc(100svh - 170px); }
+}
 #prof-body { display: flex; flex-direction: column; gap: 12px; max-height: 70vh; overflow: auto; }
 
 /* 本番 */
