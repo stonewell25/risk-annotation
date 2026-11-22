@@ -1,0 +1,100 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 2,
+   "key": "swivel_chair",
+   "ja": "回るいす",
+   "en": "Swivel chair"
+  },
+  {
+   "idx": 3,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 4,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 5,
+   "key": "laptop",
+   "ja": "ノートパソコン",
+   "en": "Laptop"
+  },
+  {
+   "idx": 6,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 7,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 8,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 9,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 10,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 11,
+   "key": "carving_knife",
+   "ja": "包丁",
+   "en": "Kitchen knife"
+  },
+  {
+   "idx": 12,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 13,
+   "key": "ottoman",
+   "ja": "足のせ台",
+   "en": "Ottoman"
+  },
+  {
+   "idx": 14,
+   "key": "floor_lamp",
+   "ja": "電気スタンド",
+   "en": "Floor lamp"
+  },
+  {
+   "idx": 15,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 16,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "firewood",
+   "ja": "薪",
+   "en": "Firewood"
+  },
+  {
+   "idx": 2,
+   "key": "consumable_microfiber_towel_wrinkled_d01",
+   "ja": "タオル",
+   "en": "Towel"
+  },
+  {
+   "idx": 3,
+   "key": "floor_lamp",
+   "ja": "電気スタンド",
+   "en": "Floor lamp"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 6,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 7,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 8,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 9,
+   "key": "wood_fireplace",
+   "ja": "暖炉",
+   "en": "Fireplace"
+  },
+  {
+   "idx": 10,
+   "key": "consumable_microfiber_towel_stack_folded_a01",
+   "ja": "たたんだタオル",
+   "en": "Folded towels"
+  }
+ ]
+}

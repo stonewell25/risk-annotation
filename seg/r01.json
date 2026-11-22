@@ -1,0 +1,58 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "infrared_heater",
+   "ja": "ヒーター",
+   "en": "Heater"
+  },
+  {
+   "idx": 2,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 3,
+   "key": "shirt",
+   "ja": "服",
+   "en": "Shirt"
+  },
+  {
+   "idx": 4,
+   "key": "bed",
+   "ja": "ベッド",
+   "en": "Bed"
+  },
+  {
+   "idx": 5,
+   "key": "blanket",
+   "ja": "毛布",
+   "en": "Blanket"
+  },
+  {
+   "idx": 6,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 7,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 8,
+   "key": "curtain",
+   "ja": "カーテン",
+   "en": "Curtain"
+  },
+  {
+   "idx": 9,
+   "key": "power_cord",
+   "ja": "電源コード",
+   "en": "Power cord"
+  }
+ ]
+}

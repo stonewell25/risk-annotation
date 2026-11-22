@@ -1,0 +1,106 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "paprika_shaker",
+   "ja": "調味料の入れ物",
+   "en": "Spice shaker"
+  },
+  {
+   "idx": 2,
+   "key": "salt_shaker",
+   "ja": "塩",
+   "en": "Salt shaker"
+  },
+  {
+   "idx": 3,
+   "key": "stove",
+   "ja": "コンロ",
+   "en": "Stove"
+  },
+  {
+   "idx": 4,
+   "key": "pepper_shaker",
+   "ja": "こしょう",
+   "en": "Pepper shaker"
+  },
+  {
+   "idx": 5,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 6,
+   "key": "dishtowel",
+   "ja": "ふきん",
+   "en": "Dish towel"
+  },
+  {
+   "idx": 7,
+   "key": "microwave",
+   "ja": "電子レンジ",
+   "en": "Microwave"
+  },
+  {
+   "idx": 8,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 9,
+   "key": "frying_pan",
+   "ja": "フライパン",
+   "en": "Frying pan"
+  },
+  {
+   "idx": 10,
+   "key": "mixing_bowl",
+   "ja": "ボウル",
+   "en": "Mixing bowl"
+  },
+  {
+   "idx": 11,
+   "key": "cutting_board",
+   "ja": "まな板",
+   "en": "Cutting board"
+  },
+  {
+   "idx": 12,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 13,
+   "key": "tupperware",
+   "ja": "保存容器",
+   "en": "Food container"
+  },
+  {
+   "idx": 14,
+   "key": "jar_of_cumin",
+   "ja": "調味料のびん",
+   "en": "Spice jar"
+  },
+  {
+   "idx": 15,
+   "key": "steak",
+   "ja": "肉",
+   "en": "Meat"
+  },
+  {
+   "idx": 16,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 17,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  }
+ ]
+}

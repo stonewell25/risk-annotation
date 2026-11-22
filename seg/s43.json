@@ -1,0 +1,130 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 2,
+   "key": "electric_kettle",
+   "ja": "電気ケトル",
+   "en": "Electric kettle"
+  },
+  {
+   "idx": 3,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 4,
+   "key": "salt_bottle",
+   "ja": "塩",
+   "en": "Salt"
+  },
+  {
+   "idx": 5,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 6,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 7,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 8,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 9,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 10,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 11,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 12,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 13,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 14,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 15,
+   "key": "pepper_shaker",
+   "ja": "こしょう",
+   "en": "Pepper shaker"
+  },
+  {
+   "idx": 16,
+   "key": "jar_of_chilli_powder",
+   "ja": "調味料のびん",
+   "en": "Spice jar"
+  },
+  {
+   "idx": 17,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 18,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 19,
+   "key": "burner",
+   "ja": "コンロ",
+   "en": "Stove burner"
+  },
+  {
+   "idx": 20,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 21,
+   "key": "water_surface",
+   "ja": "水",
+   "en": "Water"
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 2,
+   "key": "consumable_microfiber_towel_wrinkled_b01",
+   "ja": "タオル",
+   "en": "Towel"
+  },
+  {
+   "idx": 3,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 4,
+   "key": "bottle_of_detergent",
+   "ja": "洗剤のボトル",
+   "en": "Detergent bottle"
+  },
+  {
+   "idx": 5,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 6,
+   "key": "washer",
+   "ja": "洗濯機",
+   "en": "Washing machine"
+  },
+  {
+   "idx": 7,
+   "key": "clothes_dryer",
+   "ja": "衣類乾燥機",
+   "en": "Clothes dryer"
+  },
+  {
+   "idx": 8,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 9,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass",
+   "list": false
+  },
+  {
+   "idx": 10,
+   "key": "puddle_clear",
+   "ja": "床の水",
+   "en": "Water on the floor"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "pepper_shaker",
+   "ja": "こしょう",
+   "en": "Pepper shaker"
+  },
+  {
+   "idx": 2,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 3,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "cutting_board",
+   "ja": "まな板",
+   "en": "Cutting board"
+  },
+  {
+   "idx": 6,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 7,
+   "key": "salt_bottle",
+   "ja": "塩",
+   "en": "Salt"
+  },
+  {
+   "idx": 8,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 9,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 10,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 11,
+   "key": "burner",
+   "ja": "コンロ",
+   "en": "Stove burner"
+  },
+  {
+   "idx": 12,
+   "key": "beefsteak_tomato",
+   "ja": "トマト",
+   "en": "Tomato"
+  },
+  {
+   "idx": 13,
+   "key": "steak",
+   "ja": "肉",
+   "en": "Meat"
+  },
+  {
+   "idx": 14,
+   "key": "jar_of_chilli_powder",
+   "ja": "調味料のびん",
+   "en": "Spice jar"
+  },
+  {
+   "idx": 15,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 16,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 17,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  }
+ ]
+}

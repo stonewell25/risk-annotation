@@ -1,0 +1,88 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 2,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 3,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 4,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 5,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 6,
+   "key": "wine_bottle",
+   "ja": "ワインのびん",
+   "en": "Wine bottle"
+  },
+  {
+   "idx": 7,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 8,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 9,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 10,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 11,
+   "key": "soap_dispenser",
+   "ja": "せっけんのボトル",
+   "en": "Soap dispenser"
+  },
+  {
+   "idx": 12,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 13,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 14,
+   "key": "puddle_clear",
+   "ja": "床の水",
+   "en": "Water on the floor"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 2,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 3,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "trash_a01",
+   "ja": "ゴミ",
+   "en": "Trash"
+  }
+ ]
+}

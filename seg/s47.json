@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 2,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 3,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 4,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 5,
+   "key": "infrared_heater",
+   "ja": "ヒーター",
+   "en": "Heater"
+  },
+  {
+   "idx": 6,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 7,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 8,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 9,
+   "key": "curtain",
+   "ja": "カーテン",
+   "en": "Curtain"
+  },
+  {
+   "idx": 10,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  }
+ ]
+}

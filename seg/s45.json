@@ -1,0 +1,95 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 2,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 3,
+   "key": "flower",
+   "ja": "花",
+   "en": "Flower"
+  },
+  {
+   "idx": 4,
+   "key": "power_strip",
+   "ja": "電源タップ",
+   "en": "Power strip"
+  },
+  {
+   "idx": 5,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 6,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  },
+  {
+   "idx": 7,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 8,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 9,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 10,
+   "key": "vase",
+   "ja": "花びん",
+   "en": "Vase"
+  },
+  {
+   "idx": 11,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 12,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 13,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 14,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass",
+   "list": false
+  },
+  {
+   "idx": 15,
+   "key": "liquid",
+   "ja": "液体",
+   "en": "Liquid"
+  }
+ ]
+}

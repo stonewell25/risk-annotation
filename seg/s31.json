@@ -1,0 +1,83 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 2,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 3,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "mirror",
+   "ja": "鏡",
+   "en": "Mirror"
+  },
+  {
+   "idx": 6,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 7,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 8,
+   "key": "beer_glass",
+   "ja": "ビールのグラス",
+   "en": "Beer glass",
+   "list": false
+  },
+  {
+   "idx": 9,
+   "key": "bottle_of_beer",
+   "ja": "ビールのびん",
+   "en": "Beer bottle"
+  },
+  {
+   "idx": 10,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 11,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 12,
+   "key": "floor_lamp",
+   "ja": "電気スタンド",
+   "en": "Floor lamp"
+  },
+  {
+   "idx": 13,
+   "key": "liquid",
+   "ja": "液体",
+   "en": "Liquid"
+  }
+ ]
+}

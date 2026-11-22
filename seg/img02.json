@@ -1,0 +1,34 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 2,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 3,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 4,
+   "key": "trash_a01",
+   "ja": "ゴミ",
+   "en": "Trash"
+  },
+  {
+   "idx": 5,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  }
+ ]
+}

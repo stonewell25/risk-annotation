@@ -1,0 +1,77 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "silver_coin",
+   "ja": "銀色の硬貨",
+   "en": "Silver coin"
+  },
+  {
+   "idx": 2,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 3,
+   "key": "gold_coin",
+   "ja": "金色の硬貨",
+   "en": "Gold coin",
+   "list": false
+  },
+  {
+   "idx": 4,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 5,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 6,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 7,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 8,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 9,
+   "key": "standing_loudspeaker",
+   "ja": "スピーカー",
+   "en": "Speaker"
+  },
+  {
+   "idx": 10,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 11,
+   "key": "toy_dice",
+   "ja": "おもちゃのさいころ",
+   "en": "Toy dice"
+  },
+  {
+   "idx": 12,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  }
+ ]
+}

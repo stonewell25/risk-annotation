@@ -1,0 +1,149 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 2,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 3,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  },
+  {
+   "idx": 4,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 5,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 6,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 7,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 8,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 9,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 10,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 11,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 12,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 13,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 14,
+   "key": "laptop",
+   "ja": "ノートパソコン",
+   "en": "Laptop"
+  },
+  {
+   "idx": 15,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink",
+   "list": false
+  },
+  {
+   "idx": 16,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 17,
+   "key": "ottoman",
+   "ja": "足のせ台",
+   "en": "Ottoman"
+  },
+  {
+   "idx": 18,
+   "key": "microwave",
+   "ja": "電子レンジ",
+   "en": "Microwave"
+  },
+  {
+   "idx": 19,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 20,
+   "key": "floor_lamp",
+   "ja": "電気スタンド",
+   "en": "Floor lamp"
+  },
+  {
+   "idx": 21,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 22,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 23,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 24,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  }
+ ]
+}

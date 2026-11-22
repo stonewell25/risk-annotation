@@ -1,0 +1,52 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 2,
+   "key": "bathtub",
+   "ja": "浴槽",
+   "en": "Bathtub"
+  },
+  {
+   "idx": 3,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 6,
+   "key": "mirror",
+   "ja": "鏡",
+   "en": "Mirror"
+  },
+  {
+   "idx": 7,
+   "key": "outlet",
+   "ja": "コンセント",
+   "en": "Wall outlet"
+  },
+  {
+   "idx": 8,
+   "key": "power_strip",
+   "ja": "電源タップ",
+   "en": "Power strip"
+  }
+ ]
+}

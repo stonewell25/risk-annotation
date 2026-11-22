@@ -1,0 +1,40 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 2,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 3,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 6,
+   "key": "swivel_chair",
+   "ja": "回るいす",
+   "en": "Swivel chair"
+  }
+ ]
+}

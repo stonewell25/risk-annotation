@@ -1,0 +1,58 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 2,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 3,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 4,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "laptop",
+   "ja": "ノートパソコン",
+   "en": "Laptop"
+  },
+  {
+   "idx": 7,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 8,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 9,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  }
+ ]
+}

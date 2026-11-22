@@ -1,0 +1,41 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bottle_of_medicine",
+   "ja": "薬のびん",
+   "en": "Medicine bottle"
+  },
+  {
+   "idx": 2,
+   "key": "pill",
+   "ja": "錠剤",
+   "en": "Pills"
+  },
+  {
+   "idx": 3,
+   "key": "pill_bottle",
+   "ja": "サプリのびん",
+   "en": "Supplement bottle"
+  },
+  {
+   "idx": 4,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 5,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 6,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass",
+   "list": false
+  }
+ ]
+}

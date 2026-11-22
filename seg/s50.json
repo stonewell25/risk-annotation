@@ -1,0 +1,70 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 2,
+   "key": "monitor",
+   "ja": "パソコンの画面",
+   "en": "Monitor"
+  },
+  {
+   "idx": 3,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 4,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 5,
+   "key": "clothesline_pole",
+   "ja": "物干しざお",
+   "en": "Clothesline pole"
+  },
+  {
+   "idx": 6,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 7,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 8,
+   "key": "swivel_chair",
+   "ja": "回るいす",
+   "en": "Swivel chair"
+  },
+  {
+   "idx": 9,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 10,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 11,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 2,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 3,
+   "key": "toothbrush",
+   "ja": "歯ブラシ",
+   "en": "Toothbrush"
+  },
+  {
+   "idx": 4,
+   "key": "mug",
+   "ja": "マグカップ",
+   "en": "Mug"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "tube_of_toothpaste",
+   "ja": "歯みがき粉",
+   "en": "Toothpaste"
+  },
+  {
+   "idx": 7,
+   "key": "hair_dryer",
+   "ja": "ドライヤー",
+   "en": "Hair dryer"
+  },
+  {
+   "idx": 8,
+   "key": "soap_dispenser",
+   "ja": "せっけんのボトル",
+   "en": "Soap dispenser"
+  },
+  {
+   "idx": 9,
+   "key": "water_surface",
+   "ja": "水",
+   "en": "Water"
+  }
+ ]
+}

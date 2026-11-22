@@ -1,0 +1,144 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 2,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 3,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 4,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  },
+  {
+   "idx": 5,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 6,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 7,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 8,
+   "key": "carton_of_milk",
+   "ja": "牛乳パック",
+   "en": "Milk carton"
+  },
+  {
+   "idx": 9,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 10,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 11,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 12,
+   "key": "oil_bottle",
+   "ja": "油のボトル",
+   "en": "Oil bottle"
+  },
+  {
+   "idx": 13,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 14,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 15,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 16,
+   "key": "microwave",
+   "ja": "電子レンジ",
+   "en": "Microwave"
+  },
+  {
+   "idx": 17,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door",
+   "list": false
+  },
+  {
+   "idx": 18,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 19,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 20,
+   "key": "burner",
+   "ja": "コンロ",
+   "en": "Stove burner"
+  },
+  {
+   "idx": 21,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 22,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 23,
+   "key": "puddle_oil",
+   "ja": "こぼれた油",
+   "en": "Spilled oil",
+   "list": false
+  }
+ ]
+}

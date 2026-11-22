@@ -1,0 +1,65 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 2,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 3,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 4,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 7,
+   "key": "wineglass",
+   "ja": "ワイングラス",
+   "en": "Wine glass",
+   "list": false
+  },
+  {
+   "idx": 8,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  },
+  {
+   "idx": 9,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 10,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  }
+ ]
+}

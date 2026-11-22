@@ -1,0 +1,28 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "washbasin",
+   "ja": "洗面台",
+   "en": "Washbasin"
+  },
+  {
+   "idx": 2,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 3,
+   "key": "drawer",
+   "ja": "引き出し",
+   "en": "Drawer"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  }
+ ]
+}

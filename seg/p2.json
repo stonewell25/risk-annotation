@@ -1,0 +1,136 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "paperback_book",
+   "ja": "文庫本",
+   "en": "Paperback book"
+  },
+  {
+   "idx": 2,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 3,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 4,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 5,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 6,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 7,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 8,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 9,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 10,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 11,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 12,
+   "key": "fridge",
+   "ja": "冷蔵庫",
+   "en": "Fridge"
+  },
+  {
+   "idx": 13,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 14,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 15,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 16,
+   "key": "console_table",
+   "ja": "細長い台",
+   "en": "Console table"
+  },
+  {
+   "idx": 17,
+   "key": "D00179",
+   "ja": "はさみ",
+   "en": "Scissors"
+  },
+  {
+   "idx": 18,
+   "key": "pencil",
+   "ja": "鉛筆",
+   "en": "Pencil"
+  },
+  {
+   "idx": 19,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 20,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 21,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 22,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  }
+ ]
+}

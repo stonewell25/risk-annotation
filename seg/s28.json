@@ -1,0 +1,82 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "standing_loudspeaker",
+   "ja": "スピーカー",
+   "en": "Speaker"
+  },
+  {
+   "idx": 2,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 3,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 4,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 7,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 8,
+   "key": "plastic_bag",
+   "ja": "ビニール袋",
+   "en": "Plastic bag"
+  },
+  {
+   "idx": 9,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 10,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 11,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 12,
+   "key": "standing_tv",
+   "ja": "テレビ",
+   "en": "TV"
+  },
+  {
+   "idx": 13,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  }
+ ]
+}

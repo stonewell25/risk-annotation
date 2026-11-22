@@ -1,0 +1,70 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 2,
+   "key": "toy_figure",
+   "ja": "人形",
+   "en": "Toy figure"
+  },
+  {
+   "idx": 3,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 6,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 7,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 8,
+   "key": "toy_car",
+   "ja": "おもちゃの車",
+   "en": "Toy car"
+  },
+  {
+   "idx": 9,
+   "key": "toy_box",
+   "ja": "おもちゃ箱",
+   "en": "Toy box"
+  },
+  {
+   "idx": 10,
+   "key": "bed",
+   "ja": "ベッド",
+   "en": "Bed"
+  },
+  {
+   "idx": 11,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  }
+ ]
+}

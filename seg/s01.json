@@ -1,0 +1,88 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 2,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 3,
+   "key": "cutting_board",
+   "ja": "まな板",
+   "en": "Cutting board"
+  },
+  {
+   "idx": 4,
+   "key": "microwave",
+   "ja": "電子レンジ",
+   "en": "Microwave"
+  },
+  {
+   "idx": 5,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 6,
+   "key": "mug",
+   "ja": "マグカップ",
+   "en": "Mug"
+  },
+  {
+   "idx": 7,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 8,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 9,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 10,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 11,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 12,
+   "key": "wineglass",
+   "ja": "ワイングラス",
+   "en": "Wine glass"
+  },
+  {
+   "idx": 13,
+   "key": "saucepot",
+   "ja": "なべ",
+   "en": "Pot"
+  },
+  {
+   "idx": 14,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  }
+ ]
+}

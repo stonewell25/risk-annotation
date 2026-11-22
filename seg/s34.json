@@ -1,0 +1,112 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 2,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 3,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 4,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 5,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 6,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 7,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 8,
+   "key": "burner",
+   "ja": "コンロ",
+   "en": "Stove burner"
+  },
+  {
+   "idx": 9,
+   "key": "frying_pan",
+   "ja": "フライパン",
+   "en": "Frying pan"
+  },
+  {
+   "idx": 10,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 11,
+   "key": "dishtowel",
+   "ja": "ふきん",
+   "en": "Dish towel"
+  },
+  {
+   "idx": 12,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 13,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 14,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 15,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 16,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 17,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 18,
+   "key": "steak",
+   "ja": "肉",
+   "en": "Meat"
+  }
+ ]
+}

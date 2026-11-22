@@ -1,0 +1,58 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 2,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 3,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 4,
+   "key": "ashtray",
+   "ja": "灰皿",
+   "en": "Ashtray"
+  },
+  {
+   "idx": 5,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 6,
+   "key": "cigarette",
+   "ja": "たばこ",
+   "en": "Cigarette"
+  },
+  {
+   "idx": 7,
+   "key": "lighter",
+   "ja": "ライター",
+   "en": "Lighter"
+  },
+  {
+   "idx": 8,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 9,
+   "key": "newspaper",
+   "ja": "新聞",
+   "en": "Newspaper"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 2,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 3,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "console_table",
+   "ja": "細長い台",
+   "en": "Console table"
+  },
+  {
+   "idx": 6,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 7,
+   "key": "ashtray",
+   "ja": "灰皿",
+   "en": "Ashtray"
+  },
+  {
+   "idx": 8,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 9,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 10,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 11,
+   "key": "cigarette",
+   "ja": "たばこ",
+   "en": "Cigarette",
+   "list": false
+  },
+  {
+   "idx": 12,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass",
+   "list": false
+  }
+ ]
+}

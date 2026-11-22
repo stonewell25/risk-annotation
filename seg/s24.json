@@ -1,0 +1,46 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bed",
+   "ja": "ベッド",
+   "en": "Bed"
+  },
+  {
+   "idx": 2,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 3,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 4,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 5,
+   "key": "bottle_of_perfume",
+   "ja": "香水のびん",
+   "en": "Perfume bottle"
+  },
+  {
+   "idx": 6,
+   "key": "lipstick",
+   "ja": "口紅",
+   "en": "Lipstick"
+  },
+  {
+   "idx": 7,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  }
+ ]
+}

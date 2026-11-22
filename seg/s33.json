@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "toy_car",
+   "ja": "おもちゃの車",
+   "en": "Toy car"
+  },
+  {
+   "idx": 2,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 3,
+   "key": "pill_bottle",
+   "ja": "サプリのびん",
+   "en": "Supplement bottle"
+  },
+  {
+   "idx": 4,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 5,
+   "key": "pill",
+   "ja": "錠剤",
+   "en": "Pills"
+  },
+  {
+   "idx": 6,
+   "key": "toy_figure",
+   "ja": "人形",
+   "en": "Toy figure"
+  },
+  {
+   "idx": 7,
+   "key": "bed",
+   "ja": "ベッド",
+   "en": "Bed"
+  },
+  {
+   "idx": 8,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 9,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 10,
+   "key": "toy_box",
+   "ja": "おもちゃ箱",
+   "en": "Toy box"
+  }
+ ]
+}

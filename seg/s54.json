@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 2,
+   "key": "toilet",
+   "ja": "トイレ",
+   "en": "Toilet"
+  },
+  {
+   "idx": 3,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 4,
+   "key": "bathtub",
+   "ja": "浴槽",
+   "en": "Bathtub"
+  },
+  {
+   "idx": 5,
+   "key": "bar_soap",
+   "ja": "石けん",
+   "en": "Bar of soap"
+  },
+  {
+   "idx": 6,
+   "key": "door",
+   "ja": "ドア",
+   "en": "Door"
+  },
+  {
+   "idx": 7,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 8,
+   "key": "soap_dish",
+   "ja": "石けん皿",
+   "en": "Soap dish"
+  },
+  {
+   "idx": 9,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 10,
+   "key": "puddle_clear",
+   "ja": "床の水",
+   "en": "Water on the floor"
+  }
+ ]
+}

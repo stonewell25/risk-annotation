@@ -1,0 +1,101 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "pepper_shaker",
+   "ja": "こしょう",
+   "en": "Pepper shaker"
+  },
+  {
+   "idx": 2,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 3,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 4,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 5,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 6,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 7,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 8,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 9,
+   "key": "cutting_board",
+   "ja": "まな板",
+   "en": "Cutting board"
+  },
+  {
+   "idx": 10,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 11,
+   "key": "lettuce",
+   "ja": "レタス",
+   "en": "Lettuce"
+  },
+  {
+   "idx": 12,
+   "key": "jar_of_chilli_powder",
+   "ja": "調味料のびん",
+   "en": "Spice jar"
+  },
+  {
+   "idx": 13,
+   "key": "salt_bottle",
+   "ja": "塩",
+   "en": "Salt"
+  },
+  {
+   "idx": 14,
+   "key": "chopped_lettuce",
+   "ja": "切ったレタス",
+   "en": "Chopped lettuce",
+   "list": false
+  },
+  {
+   "idx": 15,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 16,
+   "key": "carving_knife",
+   "ja": "包丁",
+   "en": "Kitchen knife"
+  }
+ ]
+}

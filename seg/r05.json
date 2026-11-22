@@ -1,0 +1,70 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "saucepot",
+   "ja": "なべ",
+   "en": "Pot"
+  },
+  {
+   "idx": 2,
+   "key": "stove",
+   "ja": "コンロ",
+   "en": "Stove"
+  },
+  {
+   "idx": 3,
+   "key": "dishtowel",
+   "ja": "ふきん",
+   "en": "Dish towel"
+  },
+  {
+   "idx": 4,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 5,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 6,
+   "key": "dish_rack",
+   "ja": "水切りかご",
+   "en": "Dish rack"
+  },
+  {
+   "idx": 7,
+   "key": "mug",
+   "ja": "マグカップ",
+   "en": "Mug"
+  },
+  {
+   "idx": 8,
+   "key": "pitcher",
+   "ja": "水差し",
+   "en": "Pitcher"
+  },
+  {
+   "idx": 9,
+   "key": "water_bottle",
+   "ja": "ボトル",
+   "en": "Bottle"
+  },
+  {
+   "idx": 10,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 11,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  }
+ ]
+}

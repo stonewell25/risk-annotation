@@ -1,0 +1,70 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 2,
+   "key": "clothes_dryer",
+   "ja": "衣類乾燥機",
+   "en": "Clothes dryer"
+  },
+  {
+   "idx": 3,
+   "key": "hanger",
+   "ja": "ハンガー",
+   "en": "Hanger"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "consumable_microfiber_towel_stack_folded_a01",
+   "ja": "たたんだタオル",
+   "en": "Folded towels"
+  },
+  {
+   "idx": 6,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 7,
+   "key": "washer",
+   "ja": "洗濯機",
+   "en": "Washing machine"
+  },
+  {
+   "idx": 8,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 9,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 10,
+   "key": "trash_can",
+   "ja": "ゴミ箱",
+   "en": "Trash can"
+  },
+  {
+   "idx": 11,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  }
+ ]
+}

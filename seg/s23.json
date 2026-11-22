@@ -1,0 +1,46 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 2,
+   "key": "iron",
+   "ja": "アイロン",
+   "en": "Iron"
+  },
+  {
+   "idx": 3,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 6,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 7,
+   "key": "consumable_microfiber_towel_wrinkled_d01",
+   "ja": "タオル",
+   "en": "Towel"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "laptop",
+   "ja": "ノートパソコン",
+   "en": "Laptop"
+  },
+  {
+   "idx": 2,
+   "key": "textbook",
+   "ja": "本",
+   "en": "Book"
+  },
+  {
+   "idx": 3,
+   "key": "crumpled_paper",
+   "ja": "丸めた紙",
+   "en": "Crumpled paper"
+  },
+  {
+   "idx": 4,
+   "key": "paper",
+   "ja": "紙",
+   "en": "Paper"
+  },
+  {
+   "idx": 5,
+   "key": "scissors",
+   "ja": "はさみ",
+   "en": "Scissors"
+  },
+  {
+   "idx": 6,
+   "key": "stationery",
+   "ja": "文房具",
+   "en": "Stationery"
+  },
+  {
+   "idx": 7,
+   "key": "pot_plant",
+   "ja": "植木鉢",
+   "en": "Potted plant"
+  },
+  {
+   "idx": 8,
+   "key": "desk",
+   "ja": "机",
+   "en": "Desk"
+  },
+  {
+   "idx": 9,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 10,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 2,
+   "key": "wine_bottle",
+   "ja": "ワインのびん",
+   "en": "Wine bottle"
+  },
+  {
+   "idx": 3,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "puddle_clear",
+   "ja": "床の水",
+   "en": "Water on the floor"
+  }
+ ]
+}

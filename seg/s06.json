@@ -1,0 +1,71 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "screw",
+   "ja": "ねじ",
+   "en": "Screw"
+  },
+  {
+   "idx": 2,
+   "key": "hard_candy",
+   "ja": "あめ",
+   "en": "Hard candy"
+  },
+  {
+   "idx": 3,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 4,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 7,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 8,
+   "key": "screwdriver",
+   "ja": "ドライバー",
+   "en": "Screwdriver"
+  },
+  {
+   "idx": 9,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 10,
+   "key": "box_of_candy",
+   "ja": "お菓子の箱",
+   "en": "Box of candy"
+  },
+  {
+   "idx": 11,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass",
+   "list": false
+  }
+ ]
+}

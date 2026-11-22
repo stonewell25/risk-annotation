@@ -1,0 +1,46 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "consumable_microfiber_towel_wrinkled_b01",
+   "ja": "タオル",
+   "en": "Towel"
+  },
+  {
+   "idx": 2,
+   "key": "bottom_cabinet",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 3,
+   "key": "infrared_heater",
+   "ja": "ヒーター",
+   "en": "Heater"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 6,
+   "key": "table_lamp",
+   "ja": "電気スタンド",
+   "en": "Table lamp"
+  },
+  {
+   "idx": 7,
+   "key": "bed",
+   "ja": "ベッド",
+   "en": "Bed"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 2,
+   "key": "crouton",
+   "ja": "クルトン",
+   "en": "Croutons"
+  },
+  {
+   "idx": 3,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 6,
+   "key": "vacuum",
+   "ja": "掃除機",
+   "en": "Vacuum cleaner"
+  },
+  {
+   "idx": 7,
+   "key": "standing_tv",
+   "ja": "テレビ",
+   "en": "TV"
+  },
+  {
+   "idx": 8,
+   "key": "paper_bag",
+   "ja": "紙袋",
+   "en": "Paper bag"
+  }
+ ]
+}

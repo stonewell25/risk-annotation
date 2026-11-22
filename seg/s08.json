@@ -1,0 +1,100 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 2,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 3,
+   "key": "chopped_lettuce",
+   "ja": "切ったレタス",
+   "en": "Chopped lettuce"
+  },
+  {
+   "idx": 4,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 5,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 6,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 7,
+   "key": "bread_slice",
+   "ja": "食パン",
+   "en": "Slice of bread"
+  },
+  {
+   "idx": 8,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 9,
+   "key": "jar_of_strawberry_jam",
+   "ja": "いちごジャムのびん",
+   "en": "Strawberry jam jar"
+  },
+  {
+   "idx": 10,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 11,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  },
+  {
+   "idx": 12,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 13,
+   "key": "toaster",
+   "ja": "トースター",
+   "en": "Toaster"
+  },
+  {
+   "idx": 14,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 15,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 16,
+   "key": "water_surface",
+   "ja": "水",
+   "en": "Water"
+  }
+ ]
+}

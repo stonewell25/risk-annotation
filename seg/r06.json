@@ -1,0 +1,58 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "carving_knife",
+   "ja": "包丁",
+   "en": "Kitchen knife"
+  },
+  {
+   "idx": 2,
+   "key": "cutting_board",
+   "ja": "まな板",
+   "en": "Cutting board"
+  },
+  {
+   "idx": 3,
+   "key": "coffee_grinder",
+   "ja": "コーヒーミル",
+   "en": "Coffee grinder"
+  },
+  {
+   "idx": 4,
+   "key": "coffee_maker",
+   "ja": "コーヒーメーカー",
+   "en": "Coffee maker"
+  },
+  {
+   "idx": 5,
+   "key": "electric_pot",
+   "ja": "電気ポット",
+   "en": "Electric pot"
+  },
+  {
+   "idx": 6,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 7,
+   "key": "storage_case",
+   "ja": "収納ケース",
+   "en": "Storage case"
+  },
+  {
+   "idx": 8,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 9,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 2,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 3,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 4,
+   "key": "consumable_microfiber_towel_stack_folded_a01",
+   "ja": "たたんだタオル",
+   "en": "Folded towels"
+  },
+  {
+   "idx": 5,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 6,
+   "key": "armchair",
+   "ja": "ひじかけいす",
+   "en": "Armchair"
+  },
+  {
+   "idx": 7,
+   "key": "newspaper",
+   "ja": "新聞",
+   "en": "Newspaper"
+  },
+  {
+   "idx": 8,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 9,
+   "key": "coffee_table",
+   "ja": "低いテーブル",
+   "en": "Coffee table"
+  },
+  {
+   "idx": 10,
+   "key": "sofa",
+   "ja": "ソファ",
+   "en": "Sofa"
+  },
+  {
+   "idx": 11,
+   "key": "consumable_microfiber_towel_wrinkled_d01",
+   "ja": "タオル",
+   "en": "Towel"
+  }
+ ]
+}

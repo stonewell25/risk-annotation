@@ -1,0 +1,34 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "broken_glass",
+   "ja": "割れたガラス",
+   "en": "Broken glass"
+  },
+  {
+   "idx": 2,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 3,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 4,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 5,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  }
+ ]
+}

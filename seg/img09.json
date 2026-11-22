@@ -1,0 +1,52 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "breakfast_table",
+   "ja": "テーブル",
+   "en": "Table"
+  },
+  {
+   "idx": 2,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 3,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 4,
+   "key": "laptop",
+   "ja": "ノートパソコン",
+   "en": "Laptop"
+  },
+  {
+   "idx": 5,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 6,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 7,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 8,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  }
+ ]
+}

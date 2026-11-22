@@ -1,0 +1,64 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "electric_switch",
+   "ja": "電気のスイッチ",
+   "en": "Light switch"
+  },
+  {
+   "idx": 2,
+   "key": "bookcase",
+   "ja": "本棚",
+   "en": "Bookcase"
+  },
+  {
+   "idx": 3,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 4,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 5,
+   "key": "picture",
+   "ja": "絵",
+   "en": "Picture"
+  },
+  {
+   "idx": 6,
+   "key": "picture_frame",
+   "ja": "写真立て",
+   "en": "Picture frame"
+  },
+  {
+   "idx": 7,
+   "key": "hardback",
+   "ja": "本",
+   "en": "Book"
+  },
+  {
+   "idx": 8,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 9,
+   "key": "vase",
+   "ja": "花びん",
+   "en": "Vase"
+  },
+  {
+   "idx": 10,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  }
+ ]
+}

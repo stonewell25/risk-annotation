@@ -1,0 +1,136 @@
+{
+ "objects": [
+  {
+   "idx": 1,
+   "key": "bottom_cabinet_no_top",
+   "ja": "下の戸棚",
+   "en": "Lower cabinet"
+  },
+  {
+   "idx": 2,
+   "key": "straight_chair",
+   "ja": "いす",
+   "en": "Chair"
+  },
+  {
+   "idx": 3,
+   "key": "oven",
+   "ja": "オーブン",
+   "en": "Oven"
+  },
+  {
+   "idx": 4,
+   "key": "walls",
+   "ja": "壁",
+   "en": "Wall"
+  },
+  {
+   "idx": 5,
+   "key": "pepper_shaker",
+   "ja": "こしょう",
+   "en": "Pepper shaker"
+  },
+  {
+   "idx": 6,
+   "key": "bowl",
+   "ja": "おわん",
+   "en": "Bowl"
+  },
+  {
+   "idx": 7,
+   "key": "jar_of_chilli_powder",
+   "ja": "調味料のびん",
+   "en": "Spice jar"
+  },
+  {
+   "idx": 8,
+   "key": "openable_window",
+   "ja": "窓",
+   "en": "Window"
+  },
+  {
+   "idx": 9,
+   "key": "plate",
+   "ja": "お皿",
+   "en": "Plate"
+  },
+  {
+   "idx": 10,
+   "key": "countertop",
+   "ja": "調理台",
+   "en": "Countertop"
+  },
+  {
+   "idx": 11,
+   "key": "bleaching_agent_atomizer",
+   "ja": "漂白剤のスプレー",
+   "en": "Bleach spray"
+  },
+  {
+   "idx": 12,
+   "key": "carpet",
+   "ja": "じゅうたん",
+   "en": "Carpet"
+  },
+  {
+   "idx": 13,
+   "key": "carton_of_milk",
+   "ja": "牛乳パック",
+   "en": "Milk carton"
+  },
+  {
+   "idx": 14,
+   "key": "ceilings",
+   "ja": "天井",
+   "en": "Ceiling"
+  },
+  {
+   "idx": 15,
+   "key": "salt_bottle",
+   "ja": "塩",
+   "en": "Salt"
+  },
+  {
+   "idx": 16,
+   "key": "bottle_of_bleach_agent",
+   "ja": "漂白剤のボトル",
+   "en": "Bleach bottle"
+  },
+  {
+   "idx": 17,
+   "key": "top_cabinet",
+   "ja": "上の戸棚",
+   "en": "Upper cabinet"
+  },
+  {
+   "idx": 18,
+   "key": "burner",
+   "ja": "コンロ",
+   "en": "Stove burner"
+  },
+  {
+   "idx": 19,
+   "key": "floors",
+   "ja": "床",
+   "en": "Floor"
+  },
+  {
+   "idx": 20,
+   "key": "water_glass",
+   "ja": "コップ",
+   "en": "Glass"
+  },
+  {
+   "idx": 21,
+   "key": "furniture_sink",
+   "ja": "流し台",
+   "en": "Sink"
+  },
+  {
+   "idx": 22,
+   "key": "dishwasher",
+   "ja": "食器洗い機",
+   "en": "Dishwasher"
+  }
+ ]
+}
