@@ -91,7 +91,7 @@ legend small { font-weight: 400; color: var(--muted); font-size: .9rem; margin-l
 
 /* ペルソナ */
 .story { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
-.house { width: 92px; height: 92px; border-radius: 16px; background: var(--ok-soft); display: grid; place-items: center; font-size: 3rem; line-height: 1; }
+.house { min-width: 92px; padding: 0 12px; justify-self: start; white-space: nowrap; height: 92px; border-radius: 16px; background: var(--ok-soft); display: grid; place-items: center; font-size: 3rem; line-height: 1; }
 .story-text { font-size: 1.15rem; line-height: 1.9; }
 .members { display: flex; flex-wrap: wrap; gap: 10px; }
 .mtabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 14px; }
@@ -204,7 +204,7 @@ select { font: inherit; font-size: 1rem; padding: 8px 10px; border-radius: 8px; 
   body { font-size: 17px; }
   .panel { padding: 18px; }
   .story { grid-template-columns: 1fr; }
-  .house { width: 72px; height: 72px; font-size: 2.4rem; }
+  .house { min-width: 72px; height: 72px; font-size: 2.4rem; }
   .yn { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .step { animation: none; } .stage, .bar > span { transition: none; } }
