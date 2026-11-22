@@ -170,8 +170,15 @@ select { font: inherit; font-size: 1rem; padding: 8px 10px; border-radius: 8px; 
 .reward { border: 2px solid var(--accent); border-radius: 10px; padding: 16px 18px; background: var(--ok-soft); display: flex; flex-direction: column; gap: 8px; }
 .reward .id { font-family: var(--font-mono); word-break: break-all; }
 @media (max-width: 860px) {
-  .item-grid { grid-template-columns: minmax(0, 1fr); }
-  .left { position: static; }
+  .item-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  /* スマートフォン: 画像を画面の上に固定して、下の質問に答えながら画像をタップできるようにする(2026-11-22) */
+  .left { top: 0; z-index: 5; gap: 6px; background: var(--surface); padding: 8px 0 6px; margin-top: -8px; border-bottom: 1px solid var(--line); }
+  .pcard { padding: 6px 10px; gap: 8px; }
+  .pcard .icon { font-size: 1.3rem; }
+  .pcard p { font-size: .9rem; line-height: 1.4; }
+  .pcard small { font-size: .8rem; }
+  .stage { width: min(100%, 40svh); margin: 0 auto; }
+  .stage-hint { font-size: .85rem; line-height: 1.45; text-align: center; }
 }
 @media (max-width: 480px) {
   body { font-size: 17px; }

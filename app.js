@@ -9,6 +9,7 @@ const PAGE_VERSION = "2026-11-20";
 // v3: 家の人ごとに答える形(2026-11-12)。答えの形が変わったので、前の版の記録は読まない
 const STORE_KEY = "risk-annotation-v6"; // v6: ペルソナ 3 種類(P1, P2, P4)・構造化プロフィール・28 枚ずつ A/B(2026-11-20)
 const LANG_KEY = "risk-annotation-lang";
+const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
 const VIEWS = ["view-loading", "view-blocked", "view-bg", "view-attr", "view-persona", "view-how", "view-item", "view-done"];
 
 const $ = (id) => document.getElementById(id);
@@ -23,6 +24,8 @@ let lang = (() => {
 function t(key, vars = {}) {
   let s = I18N[lang][key] ?? I18N.ja[key] ?? key;
   for (const [k, v] of Object.entries(vars)) s = s.replace(`{${k}}`, v);
+  // 指で操作する端末(スマートフォン・タブレット)では「クリック」を「タップ」と書く(2026-11-22)
+  if (TOUCH) s = s.replace(/クリック/g, "タップ").replace(/Click/g, "Tap").replace(/click/g, "tap");
   return s;
 }
 const L = (pair) => pair[lang === "ja" ? 0 : 1]; // ペルソナの [日本語, 英語]
