@@ -5,9 +5,9 @@
 // 送れなかった回答はブラウザに溜めておき、次の送信時・次に開いたときに送り直す。
 "use strict";
 
-const PAGE_VERSION = "2026-11-20";
+const PAGE_VERSION = "2026-11-22";
 // v3: 家の人ごとに答える形(2026-11-12)。答えの形が変わったので、前の版の記録は読まない
-const STORE_KEY = "risk-annotation-v6"; // v6: ペルソナ 3 種類(P1, P2, P4)・構造化プロフィール・28 枚ずつ A/B(2026-11-20)
+const STORE_KEY = "risk-annotation-v7"; // v7: P1 → P3(車いす)に入れ替え(2026-11-22)。v6: ペルソナ 3 種類(P1, P2, P4)・構造化プロフィール・28 枚ずつ A/B(2026-11-20)
 const LANG_KEY = "risk-annotation-lang";
 const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
 const VIEWS = ["view-loading", "view-blocked", "view-bg", "view-attr", "view-persona", "view-how", "view-item", "view-done"];
